@@ -1,0 +1,360 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="assets/img/favicon.ico" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets2/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets2/css/noscript.css" /></noscript>
+  </head>
+  <style>
+    
+  </style>
+  <body class="is-preload">
+
+      <div id="wrapper">
+          <header id="header">
+            <div class="logo">
+            <img src="assets/img/favicon.ico" style="margin-top: 25%;"/>
+            </div>
+            <div class="content">
+              <div class="inner">
+                <h3>Terms and Conditions</h3>
+                <h4>Assessment Guidelines:</h4>
+                <ol align="left">
+                    <li>There are total 10 questions in this assessment.</li>
+                    <li>Select preferred skills and interest according to your choice.</li>
+                    <li>There is no time limit. Please answer honestly to have the best results.</li>
+                    <li>You may view the breakdown of results after finishing the assessment.</li>
+                    <li>A feedback form provided at the end is highly encouraged to be answered <br>so that you can help provide insightful data for our thesis.</li>
+                </ol>
+                <div class="field half">
+                        <input type="radio" id="demo-copy" name="demo-copy" onclick="location.href='#page0';"/>
+                        <label for="demo-copy">I accept the terms and conditions.</label><br>                      
+                </div>
+              </div>
+            </div>
+          </header>
+
+         
+              <div id="main">
+                <article id="page0">
+                  <h3>Please input your School and Strand</h3>
+              <form class="form-signin"  href="login.html" novalidate> 
+                <script>
+                  
+                   function display() {
+                    var a = document.getElementById('school').value;
+
+                    if (a == "ICNHS - Main" || a == "ICNSF" || a == "ICENHS" || a == "DNHS" || a == "TCNHS") {
+                      document.getElementById('strand').style.display="block";
+                    } else {
+                      document.getElementById('strand').style.display="none";
+                    }
+
+                    var b = document.getElementById('strand').value;
+
+                    if (b == "Home Economics") {
+                      document.getElementById('home').style.display="block";
+                    } else {
+                      document.getElementById('home').style.display="none";
+                    }
+
+                    if (b == "Industrial Arts") {
+                      document.getElementById('industrial').style.display="block";
+                    } else {
+                      document.getElementById('industrial').style.display="none";
+                    }
+
+                    if (b == "Information and Communication Technology") {
+                      document.getElementById('ict').style.display="block";
+                    } else {
+                      document.getElementById('ict').style.display="none";
+                    }
+
+                  }
+                </script>
+               <label></label>
+                  <select name="school" id="school" required="" onclick="display();">
+                  <option value="" disabled selected hidden>School Name</option>
+                  <option value="ICNHS - Main">Iligan City National High School - Main</option>
+                  <option value="ICNSF">Iligan City National School of Fisheries</option>
+                  <option value="ICENHS">Iligan City East National High School</option>
+                  <option value="DNHS">Dalipuga National High School</option>
+                  <option value="TCNHS">Tomas Cabili National High School</option>
+                  </select>
+                  <label></label>
+                  <select name="strand" id="strand" required="" style="display: none;" onclick="display();">
+                  <option value="" disabled selected hidden>TVL Strand</option>
+                  <option value="Home Economics">Home Economics</option>
+                  <option value="Industrial Arts">Industrial Arts</option>
+                  <option value="Information and Communication Technology">Information and Communication Technology</option>
+                  </select>
+                  <label></label> 
+                  <select name="substrand" id="home" required="" style="display: none;">
+                  <option value="" disabled selected hidden>Home Economic related strands</option>
+                  <option value="Beauty/Nail Care (NC ll)">Beauty/Nail Care (NC ll)</option>
+                  <option value="Bread and Pastry Production (NC ll)">Bread and Pastry Production (NC ll)</option>
+                  <option value="Cookery (NC ll)">Cookery (NC ll)</option>
+                  <option value="Dressmaking (NC ll)">Dressmaking (NC ll)</option>
+                  <option value="Food and Beverages Services (NC ll)">Food and Beverages Services (NC ll)</option>
+                  <option value="Hairdressing (NC I, NC II, NC III)">Hairdressing (NC I, NC II, NC III)</option>
+                  <option value="Handicraft (Non-NC)">Handicraft (Non-NC)</option>
+                  <option value="Housekeeping (NC II)">Housekeeping (NC II)</option>
+                  <option value="Tailoring (NC II)">Tailoring (NC II)</option>
+                  </select>
+                  <label></label> 
+                  <select name="substrand" id="industrial" required="" style="display: none;">
+                  <option value="" disabled selected hidden>Industrial Arts related strands</option>
+                  <option value="Automotive Servicing (NC I, NC II)">Automotive Servicing (NC I, NC II)</option>
+                  <option value="Carpentry (NC II, NCIII)">Carpentry (NC II, NCIII)</option>
+                  <option value="Construction Painting (NC II)">Construction Painting (NC II)</option>
+                  <option value="Driving (NC II)">Driving (NC II)</option>
+                  <option value="Electrical Installation and Maintenance (NC II))">Electrical Installation and Maintenance (NC II)</option>
+                  <option value="Furniture Making (Finishing)(NC II)">Furniture Making (Finishing)(NC II)</option>
+                  <option value="Instrumentation and Control Servicing (NC II)">Instrumentation and Control Servicing (NC II)</option>
+                  <option value="Electronic Products Assembly and Servicing (NC II)">Electronic Products Assembly and Servicing (NC II)</option>
+                  <option value="Machining (NC I, NC II)">Machining (NC I, NC II)</option>
+                  <option value="Masonry (NC II)">Masonry (NC II)</option>
+                  <option value="Mechatronics Servicing (NC II)">Mechatronics Servicing (NC II)</option>
+                  <option value="Plumbing (NC I, NC II)">Plumbing (NC I, NC II)</option>
+                  <option value="Shielded Metal Arc Welding (NC I, NC II)">Shielded Metal Arc Welding (NC I, NC II)</option>
+                  <option value="Tile Setting (NC II)">Tile Setting (NC II)</option>
+                  </select>
+                  <label></label> 
+                  <select name="substrand" id="ict" required="" style="display: none;">
+                  <option value="" disabled selected hidden>ICT related strands</option>
+                  <option value="Animation (NC II)">Animation (NC II)</option>
+                  <option value="Computer Systems Servicing (NC II)">Computer Systems Servicing (NC II)</option>
+                  <option value="Illustration (NC II)">Illustration (NC II)</option>
+                  <option value="Technical Drafting (NC II)">Technical Drafting (NC II)</option>
+                  </select>
+                  <label></label>
+                  <nav>
+                  <button class="button" name="" type="submit" onclick="location.href='#page1';">Proceed</button>
+                </nav>
+                  </form>
+              </article>
+
+             
+              <article id="page1">
+              <form action="result.html" method="POST" id="quiz">
+              
+                <div class="quiz-overlay"></div>                  
+                            <div class="mtm">
+                            <h2>Choose only (1) activity you prefer</h2><br>
+                              <input type="checkbox" name="question-1-answers" id="question-1-answers-A" value="COOKERY" onclick="location.href='#page2';"/><label for="question-1-answers-A"><h3>COOKERY</h3></label>
+                               <blockquote><p><b>Observe workplace hygiene procedures in cookery</b></p></blockquote>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="question-1-answers" id="question-1-answers-B" value="TECHNICAL DRAFTING" onclick="location.href='#page2';"/><label for="question-1-answers-B"><h3>TECHNICAL DRAFTING</h3></label>
+                                 <blockquote><p><b>Interpret technical drawings and plans</p></b></blockquote>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="question-1-answers" id="question-1-answers-C" value="CARPENTRY" onclick="location.href='#page2';"/><label for="question-1-answers-C"><h3>CARPENTRY</h3></label>
+                                 <blockquote><p><b>Fabricate, install and remove wooden formworks</b></p></blockquote>
+                            </div><br>
+                              <p class="quiz-progress" align="center">1 of 10</p>
+              </article>
+
+              <article id="page2">
+                <div class="quiz-overlay"></div>
+                          <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-2-answers" id="question-2-answers-A" value="COOKERY" onclick="location.href='#page3';"/><label for="question-2-answers-A"><h3>COOKERY</h3></label>
+                              <blockquote><p><b>Perform workplace and safety practices in the kitchen</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-2-answers" id="question-2-answers-B" value="TECHNICAL DRAFTING" onclick="location.href='#page3';"/><label for="question-2-answers-B"><h3>TECHNICAL DRAFTING</h3></label>
+                              <blockquote><p><b>Prepare computer-aided drawings</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-2-answers" id="question-2-answers-C" value="CARPENTRY" onclick="location.href='#page3';"/><label for="question-2-answers-C"><h3>CARPENTRY</h3></label>
+                              <blockquote><p><b>Prepare and maintain construction materials and tools</b></p></blockquote>
+                          </div><br>
+                              <p class="quiz-progress" align="center">2 of 10</p>
+              </article>
+
+              <article id="page3">
+                <div class="quiz-overlay"></div>
+                          <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-3-answers" id="question-3-answers-A" value="COOKERY" onclick="location.href='#page4';"/><label for="question-3-answers-A"><h3>COOKERY</h3></label>
+                              <blockquote><p><b>Provide effective customer service and management</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-3-answers" id="question-3-answers-B" value="TECHNICAL DRAFTING" onclick="location.href='#page4';"/><label for="question-3-answers-B"><h3>TECHNICAL DRAFTING</h3></label>
+                              <blockquote><p><b>Draft electrical and electronic layout and details</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-3-answers" id="question-3-answers-C" value="CARPENTRY" onclick="location.href='#page4';"/><label for="question-3-answers-C"><h3>CARPENTRY</h3></label>
+                             <blockquote><p><b>Perform Electrical Wiring and Electronic Circuits</b></p></blockquote>
+                         </div><br>
+                              <p class="quiz-progress" align="center">3 of 10</p>
+              </article>
+
+              <article id="page4">
+                <div class="quiz-overlay"></div>
+                          <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-4-answers" id="question-4-answers-A" value="COOKERY" onclick="location.href='#page5';"/><label for="question-4-answers-A"><h3>COOKERY</h3></label>
+                              <blockquote><p><b>Prepare and cook different dishes in cookery</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-4-answers" id="question-4-answers-B" value="MECHANICAL DRAFTING" onclick="location.href='#page5';"/><label for="question-4-answers-B"><h3>MECHANICAL DRAFTING</h3></label>
+                              <blockquote><p><b>Prepare basic engineering drafting</b></p></blockquote>
+                          <div>
+                              <input type="checkbox" name="question-4-answers" id="question-4-answers-C" value="PLUMBING" onclick="location.href='#page5';"/><label for="question-4-answers-C"><h3>PLUMBING</h3></label>
+                              <blockquote><p><b>Perform multiple plumbing units, installation and assemblies</b></p></blockquote>
+                          </div><br>
+                              <p class="quiz-progress" align="center">4 of 10</p>
+              </article>
+
+              <article id="page5">
+                <div class="quiz-overlay"></div>
+                          <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-5-answers" id="question-5-answers-A" value="DRESSMAKING" onclick="location.href='#page6';"/><label for="question-5-answers-A"><h3>DRESSMAKING</h3></label>
+                              <blockquote><p><b>Carry out measurements and calculation</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-5-answers" id="question-5-answers-B" value="GRAPHIC DESIGN" onclick="location.href='#page6';"/><label for="question-5-answers-B"><h3>GRAPHIC DESIGN</h3></label>
+                              <blockquote><p><b>Develop designs for user interface</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-5-answers" id="question-5-answers-C" value="ELECTRICAL INSTALLATION AND MAINTENANCE" onclick="location.href='#page6';"/><label for="question-5-answers-C"><h3>ELECTRICAL INSTALLATION AND MAINTENANCE</h3></label>
+                              <blockquote><p><b>Install wiring devices and auxiliary outlets </b></p></blockquote>
+                         </div><br>
+                        <p class="quiz-progress" align="center">5 of 10</p>
+              </article>
+
+              <article id="page6">
+                <div class="quiz-overlay"></div>
+                         <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-6-answers" id="question-6-answers-A" value="DRESSMAKING" onclick="location.href='#page7';"/><label for="question-6-answers-A"><h3>DRESSMAKING</h3></label>
+                             <blockquote><p><b>Prepare materials and draft casual clothing</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-6-answers" id="question-6-answers-B" value="VISUAL GRAPHIC DESIGN" onclick="location.href='#page7';"/><label for="question-6-answers-B"><h3>VISUAL GRAPHIC DESIGN</h3></label>
+                              <blockquote><p><b>Perform Computer Operations</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-6-answers" id="question-6-answers-C" value="AUTOMOTIVE SERVICING" onclick="location.href='#page7';"/><label for="question-6-answers-C"><h3>AUTOMOTIVE SERVICING</h3></label>
+                             <blockquote><p><b>Service Engine Mechanical System in Automotive</b></p></blockquote>
+                          </div><br>
+                              <p class="quiz-progress" align="center">6 of 10</p>
+              </article>
+
+              <article id="page7">
+                <div class="quiz-overlay"></div>
+                          <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-7-answers" id="question-7-answers-A" value="BREAD AND PASTRY PRODUCTION" onclick="location.href='#page8';"/><label for="question-7-answers-A"><h3>BREAD AND PASTRY PRODUCTION</h3></label>
+                              <blockquote><p><b>Prepare and produce pastry products</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-7-answers" id="question-7-answers-B" value="2D ANIMATION" onclick="location.href='#page8';"/><label for="question-7-answers-B"><h3>2D ANIMATION</h3></label>
+                              <blockquote><p><b>Create 2D digital cut-out animation</b></p></blockquote>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="question-7-answers" id="question-7-answers-C" value="ELECTRONIC PRODUCTS ASSEMBLY AND SERVICING" onclick="location.href='#page8';"/><label for="question-7-answers-C"><h3>ELECTRONIC PRODUCTS ASSEMBLY AND SERVICING</h3></label>
+                            <blockquote><p><b>Assemble industrial electronic modules, products and systems</b></p></blockquote>
+                          </div><br>
+                              <p class="quiz-progress" align="center">7 of 10</p>
+              </article>
+
+              <article id="page8">
+                <div class="quiz-overlay"></div>
+                          <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-8-answers" id="question-8-answers-A" value="DRESSMAKING" onclick="location.href='#page9';"/><label for="question-8-answers-A"><h3>DRESSMAKING</h3></label>
+                              <blockquote><p><b>Sew and apply finishing touches on casual clothing</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-8-answers" id="question-8-answers-B" value="VISUAL GRAPHIC DESIGN" onclick="location.href='#page9';"/><label for="question-8-answers-B"><h3>VISUAL GRAPHIC DESIGN</h3></label>
+                              <blockquote><p><b>Develop designs for print media</b></p></blockquote>
+                          </div>
+                          
+                          <div>
+                              <input type="checkbox" name="question-8-answers" id="question-8-answers-C" value="MASONRY" onclick="location.href='#page9';"/><label for="question-8-answers-C"><h3>MASONRY</h3></label>
+                              <blockquote><p><b>Lay concrete hollow block for structure in Masonry</b></p></blockquote>
+                          </div><br>
+                              <p class="quiz-progress" align="center">8 of 10</p>
+              </article>
+             <article id="page9"> 
+                <div class="quiz-overlay"></div>
+                          <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-9-answers" id="question-9-answers-A" value="COOKERY" onclick="location.href='#page10';"/><label for="question-9-answers-A"><h3>COOKERY</h3></label>
+                              <blockquote><p><b>Clean and maintain kitchen premises</b></p></blockquote>
+                          </div>  
+                          <div>
+                              <input type="checkbox" name="question-9-answers" id="question-9-answers-B" value="TECHNICAL DRAFTING" onclick="location.href='#page10';"/><label for="question-9-answers-B"><h3>TECHNICAL DRAFTING</h3></label>
+                              <blockquote><p><b> Perform mensuration and calculations</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-9-answers" id="question-9-answers-C" value="SHIELDED METAL ARC WELDING (SMAW)" onclick="location.href='#page10';"/><label for="question-9-answers-C"><h3>SHIELDED METAL ARC WELDING (SMAW)</h3></label>
+                              <blockquote><p><b>Weld Carbon Steel Plates and Pipes using SMAW</b></p></blockquote>
+                          </div><br>
+                              <p class="quiz-progress" align="center">9 of 10</p> 
+              </article>
+
+              <article id="page10">
+                <div class="quiz-overlay"></div>
+                          <h2>Choose only (1) activity you prefer</h2><br>
+                    
+                          <div class="mtm">
+                              <input type="checkbox" name="question-10-answers" id="question-10-answers-A" value="DRESSMAKING" onclick="location.href='#answer-result';"/><label for="question-10-answers-A"><h3>DRESSMAKING</h3></label>
+                              <blockquote><p><b>Set up and operate sewing machines</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-10-answers" id="question-10-answers-B" value="TECHNICAL DRAFTING" onclick="location.href='#answer-result';"/><label for="question-10-answers-B"><h3>TECHNICAL DRAFTING</h3></label>
+                              <blockquote><p><b>Draft structural layout and details</b></p></blockquote>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="question-10-answers" id="question-10-answers-C" value="RAC SERVICING (DomRAC)" onclick="location.href='#answer-result';"/><label for="question-10-answers-C"><h3>RAC SERVICING (DomRAC)</h3></label>
+                              <blockquote><p><b>Troubleshoot and repair refrigeration and air conditioning systems</b></p></blockquote>
+                          </div><br>
+                              <p class="quiz-progress" align="center">10 of 10</p>
+              </article>
+
+              <article id="answer-result">
+                          <div class="mtm">
+                          <h3 id="answer-result" class="anticipate">Now it's time to see your results...</h3>
+                          <input type="submit" value="View Result" id="submit-quiz" name="viewresult"/>
+                        </div>
+                      </article>
+                      </form>
+            </div>
+          
+          
+            
+          <footer id="footer">
+            
+          </footer>
+
+      </div>
+
+    <!-- BG -->
+      <div id="bg"></div>
+
+    <!-- Scripts -->
+      <script src="assets2/js/jquery.min.js"></script>
+      <script src="assets2/js/browser.min.js"></script>
+      <script src="assets2/js/breakpoints.min.js"></script>
+      <script src="assets2/js/util.js"></script>
+      <script src="assets2/js/main.js"></script>
+
+  </body>
+</html>
